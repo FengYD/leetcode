@@ -2,7 +2,7 @@ import tools.StringUtils;
 
 /**
  * @program: leetcode
- * @description: leetcode第七题ReverseInteger
+ * @description: leetcode第7题ReverseInteger
  * @author: fengyadong
  * @create: 2018-09-16 21:01
  **/
