@@ -6,7 +6,7 @@ import java.util.Map;
 
 /**
  * @program: leetcode
- * @description: leetcode第一题TwoSum
+ * @description: leetcode第1题TwoSum
  * @author: fengyadong
  * @create: 2018-09-16 21:01
  **/
