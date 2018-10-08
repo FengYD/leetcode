@@ -6,7 +6,7 @@ import tools.StringUtils;
  * @author: fengyadong
  * @create: 2018-09-16 21:01
  **/
-public class ReverseInteger_7 {
+public class ReverseInteger {
     public int reverse(int x) {
         int res = 0;
         long abs_x = Math.abs((long)x);
@@ -30,9 +30,9 @@ public class ReverseInteger_7 {
     }
 
     public static void main(String[] args) {
-        ReverseInteger_7 reverseInteger_7 = new ReverseInteger_7();
-        System.out.println(reverseInteger_7.reverse(-2147483648));
-        System.out.println(reverseInteger_7.reverse(-123));
-        System.out.println(reverseInteger_7.reverse(120));
+        ReverseInteger reverseInteger = new ReverseInteger();
+        System.out.println(reverseInteger.reverse(-2147483648));
+        System.out.println(reverseInteger.reverse(-123));
+        System.out.println(reverseInteger.reverse(120));
     }
 }

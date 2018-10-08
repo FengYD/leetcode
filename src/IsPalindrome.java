@@ -4,12 +4,12 @@
  * @author: fengyadong
  * @create: 2018-09-16 21:48
  **/
-public class IsPalindrome_9 {
+public class IsPalindrome {
     public boolean isPalindrome(int x) {
         return true;
     }
 
     public static void main(String[] args) {
-        IsPalindrome_9 isPalindrome_9 = new IsPalindrome_9();
+        IsPalindrome isPalindrome_9 = new IsPalindrome();
     }
 }

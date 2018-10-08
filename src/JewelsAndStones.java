@@ -7,7 +7,7 @@ import java.util.Map;
  * @author: fengyadong
  * @create: 2018-09-18 22:16
  **/
-public class JewelsAndStones_771 {
+public class JewelsAndStones {
     /**
      * 题目比较简单
      * */
@@ -24,7 +24,7 @@ public class JewelsAndStones_771 {
     public static void main(String[] args) {
         String J = "aA";
         String S = "aAAbbbb";
-        JewelsAndStones_771 jewelsAndStones_771 = new JewelsAndStones_771();
-        jewelsAndStones_771.numJewelsInStones(J, S);
+        JewelsAndStones jewelsAndStones = new JewelsAndStones();
+        jewelsAndStones.numJewelsInStones(J, S);
     }
 }

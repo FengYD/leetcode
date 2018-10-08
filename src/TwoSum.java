@@ -10,7 +10,7 @@ import java.util.Map;
  * @author: fengyadong
  * @create: 2018-09-16 21:01
  **/
-public class TwoSum_1 {
+public class TwoSum {
 
     /**
      * 哈希思想
@@ -36,9 +36,9 @@ public class TwoSum_1 {
     }
 
     public static void main(String[] args) {
-        TwoSum_1 twoSum_1 = new TwoSum_1();
+        TwoSum twoSum = new TwoSum();
         int nums[] = {2,7,11,15};
         int target = 9;
-        twoSum_1.twoSum(nums, target);
+        twoSum.twoSum(nums, target);
     }
 }
