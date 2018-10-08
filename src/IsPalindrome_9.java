@@ -6,6 +6,6 @@
  **/
 public class IsPalindrome_9 {
     public boolean isPalindrome(int x) {
-        
+
     }
 }
