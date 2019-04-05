@@ -17,18 +17,18 @@ public class Lamda {
 
     public void example1(){
         List<Apple> appleList = new ArrayList<>();
-        appleList.add(new Apple("red", 100));
-        appleList.add(new Apple("red", 110));
-        appleList.add(new Apple("red", 120));
-        appleList.add(new Apple("red", 130));
-        appleList.add(new Apple("red", 140));
-        appleList.add(new Apple("red", 150));
-        appleList.add(new Apple("green", 101));
-        appleList.add(new Apple("green", 111));
-        appleList.add(new Apple("green", 121));
-        appleList.add(new Apple("green", 131));
-        appleList.add(new Apple("green", 141));
-        appleList.add(new Apple("green", 151));
+        appleList.add(new Apple(1, "red", 100));
+        appleList.add(new Apple(2, "red", 110));
+        appleList.add(new Apple(3, "red", 120));
+        appleList.add(new Apple(4, "red", 130));
+        appleList.add(new Apple(5, "red", 140));
+        appleList.add(new Apple(6, "red", 150));
+        appleList.add(new Apple(7, "green", 101));
+        appleList.add(new Apple(8, "green", 111));
+        appleList.add(new Apple(9, "green", 121));
+        appleList.add(new Apple(10, "green", 131));
+        appleList.add(new Apple(11, "green", 141));
+        appleList.add(new Apple(12, "green", 151));
 
         List<Apple> traditionalSortList = new ArrayList<>();
         traditionalSortList.addAll(appleList);
