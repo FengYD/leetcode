@@ -1,6 +1,4 @@
-package tools;
-
-import javafx.scene.control.Alert;
+package leet.tools;
 
 /**
  * @program: leetcode
