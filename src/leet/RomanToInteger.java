@@ -13,24 +13,25 @@ public class RomanToInteger {
     public int romanToInt(String s) {
         int result = 0;
 
-        HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
-        hashMap.put("I",1);
-        hashMap.put("V",5);
-        hashMap.put("X",10);
-        hashMap.put("L",50);
-        hashMap.put("C",100);
-        hashMap.put("D",500);
-        hashMap.put("M",1000);
+        int[] byteMap = new int[128];
+        byteMap['I'] = 1;
+        byteMap['V'] = 5;
+        byteMap['X'] = 10;
+        byteMap['L'] = 50;
+        byteMap['C'] = 100;
+        byteMap['D'] = 500;
+        byteMap['M'] = 1000;
+
 
         int nowValue = 0;
         for (int i = s.length()-1; i >= 0; i--) {
-            if(hashMap.get(String.valueOf(s.charAt(i))) == nowValue){
+            if(byteMap[s.charAt(i)] == nowValue){
                 result += nowValue;
-            }else if(hashMap.get(String.valueOf(s.charAt(i))) > nowValue){
-                nowValue = hashMap.get(String.valueOf(s.charAt(i)));
+            }else if(byteMap[s.charAt(i)] > nowValue){
+                nowValue = byteMap[s.charAt(i)];
                 result += nowValue;
             }else {
-                result -= hashMap.get(String.valueOf(s.charAt(i)));
+                result -= byteMap[s.charAt(i)];
             }
         }
 
@@ -39,7 +40,7 @@ public class RomanToInteger {
 
     public static void main(String[] args) {
         RomanToInteger romanToInteger = new RomanToInteger();
-        String s = "LVIII";
+        String s = "MCMXCIV";
         System.out.println(romanToInteger.romanToInt(s));
     }
 
