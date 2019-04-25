@@ -27,7 +27,8 @@ public class BullsAndCows {
             }
         }
 
-        return String.format("%sA%sB",bull, cow);
+        //return String.format("%dA%dB",bull, cow);
+        return bull+"A"+cow+"B";
     }
 
     public static void main(String[] args) {

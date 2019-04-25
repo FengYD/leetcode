@@ -9,9 +9,7 @@ import java.net.Inet4Address;
  */
 public class SocketServerExample {
 
-    public Inet4Address address;
+    public void tcpEchoServer(){
 
-    public SocketServerExample(Inet4Address address){
-        this.address = address;
     }
 }
