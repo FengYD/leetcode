@@ -1,6 +1,9 @@
 package java8;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 import java.util.stream.Collectors;
 
 /**
@@ -11,6 +14,8 @@ import java.util.stream.Collectors;
 public class Lamda {
 
     public static void main(String[] args) {
+        List<Apple> apples = new ArrayList<>();
+        apples = apples.stream().filter(a -> a.getId() == 1).collect(Collectors.toList());
         Lamda lamda = new Lamda();
         lamda.example1();
     }
