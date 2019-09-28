@@ -1,6 +1,5 @@
 package model;
 
-import com.oracle.webservices.internal.api.databinding.DatabindingMode;
 
 /**
  * @program: leetcode
