@@ -12,20 +12,20 @@ public class RemoveNthFromEnd {
         ListNode p = head;
         ListNode q = head;
         for (int i = 1; i < n; i++) {
-            p = p.getNext();
+            p = p.next;
         }
-        if (p.getNext() == null){
-            return head.getNext();
+        if (p.next == null){
+            return head.next;
         }
-        p = p.getNext();
-        while (p.getNext() != null){
-            p = p.getNext();
-            q = q.getNext();
+        p = p.next;
+        while (p.next != null){
+            p = p.next;
+            q = q.next;
         }
-        if (q.getNext() != null) {
-            q.setNext(q.getNext().getNext());
+        if (q.next != null) {
+            q.next = q.next.next;
         } else {
-            q.setNext(null);
+            q.next = null;
         }
         return head;
     }
