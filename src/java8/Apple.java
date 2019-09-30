@@ -1,10 +1,8 @@
 package java8;
 
-
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.NoArgsConstructor;
 
 /**
  * @author fengyadong
@@ -12,6 +10,8 @@ import lombok.ToString;
  * @description
  */
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Apple {
 
     private Integer id;
@@ -19,13 +19,5 @@ public class Apple {
     private String color;
 
     private Integer weight;
-
-    public Apple(){}
-
-    public Apple(Integer id, String color, int weight){
-        this.id = id;
-        this.color = color;
-        this.weight = weight;
-    }
 
 }
