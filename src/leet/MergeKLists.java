@@ -9,6 +9,7 @@ import model.ListNode;
  */
 public class MergeKLists {
     public ListNode mergeKLists(ListNode[] lists) {
-        ListNode res;
+        ListNode res = new ListNode(1);
+        return res;
     }
 }
