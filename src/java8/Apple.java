@@ -19,5 +19,4 @@ public class Apple {
     private String color;
 
     private Integer weight;
-
 }
