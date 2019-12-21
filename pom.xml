@@ -17,7 +17,7 @@
         <spring-boot-maven-plugin.version>1.5.2.RELEASE</spring-boot-maven-plugin.version>
         <maven-assembly-plugin.version>2.2.1</maven-assembly-plugin.version>
         <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
-        <fastjson.version>1.2.28</fastjson.version>
+        <fastjson.version>1.2.16</fastjson.version>
         <commons-lang3.version>3.7</commons-lang3.version>
         <lombok.version>1.16.20</lombok.version>
     </properties>
@@ -38,6 +38,31 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
         </dependency>
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-core</artifactId>
+            <version>3.2.12.RELEASE</version>
+        </dependency>
+
+        <!--jackson-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.9.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.9.3</version>
+        </dependency>
+        <!--jackson-->
     </dependencies>
 
     <build>

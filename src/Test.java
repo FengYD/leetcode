@@ -28,5 +28,8 @@ public class Test {
                 .distinct()
                 .collect(Collectors.toList());
         System.out.println(ds2);
+
+        Float a = 0f/0f;
+        System.out.println(a.equals(a));
     }
 }
