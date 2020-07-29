@@ -1,6 +1,8 @@
 package java8.ex;
 
-import java.sql.SQLIntegrityConstraintViolationException;
+import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author fengyadong001
@@ -9,9 +11,10 @@ import java.sql.SQLIntegrityConstraintViolationException;
  */
 public class Check {
 
-    public void test1() throws SQLIntegrityConstraintViolationException{
-        throw new SQLIntegrityConstraintViolationException();
+    public static void main(String[] args) {
+        String s = "{\"errno\":0,\"errmsg\":\"\",\"traceId\":\"47356483656267672\"}";
+        byte[] b = new String(s.getBytes(), StandardCharsets.UTF_8).getBytes();
+        Map<String, String> map = new HashMap<>();
     }
-
 
 }
