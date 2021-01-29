@@ -17,7 +17,7 @@
         <spring-boot-maven-plugin.version>1.5.2.RELEASE</spring-boot-maven-plugin.version>
         <maven-assembly-plugin.version>2.2.1</maven-assembly-plugin.version>
         <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
-        <fastjson.version>1.2.16</fastjson.version>
+        <fastjson.version>1.2.25</fastjson.version>
         <commons-lang3.version>3.7</commons-lang3.version>
         <lombok.version>1.16.20</lombok.version>
     </properties>
