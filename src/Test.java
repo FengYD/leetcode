@@ -1,6 +1,7 @@
 import org.apache.commons.lang3.RandomStringUtils;
 
 import java.util.Arrays;
+import java.util.Deque;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
@@ -57,5 +58,11 @@ public class Test {
 
         //Float a = 0f/0f;
         //System.out.println(a.equals(a));
+        StringBuffer stringBuffer = new StringBuffer();
+        String sa = "aaa";
+        sa.toCharArray();
+        stringBuffer.toString();
+        int[] r = new int[1];
+        //Deque<Integer>
     }
 }

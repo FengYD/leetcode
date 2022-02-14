@@ -7,11 +7,11 @@ package leet.tools;
  * @create: 2018-09-16 21:14
  **/
 public class StringUtils {
-    static String reverse(String str){
+    static String reverse(String str) {
         StringBuilder strReverse = new StringBuilder();
-        for(int i = str.length() - 1; i >= 0; i--){
+        for (int i = str.length() - 1; i >= 0; i--) {
             strReverse.append(str.charAt(i));
         }
         return strReverse.toString();
-        }
+    }
 }

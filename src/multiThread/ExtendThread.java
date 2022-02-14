@@ -10,6 +10,14 @@ import java.util.List;
  */
 public class ExtendThread extends Thread {
 
+    public ExtendThread(){
+
+    }
+
+    public ExtendThread(int i) {
+
+    }
+
     @Override
     public void run(){
         super.run();
