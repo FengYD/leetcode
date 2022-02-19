@@ -1,10 +1,8 @@
 package leet.tools;
 
 import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
 
 import java.util.Arrays;
-import java.util.Stack;
 
 /**
  * @author fengyadong
@@ -19,7 +17,7 @@ public class ArrayUtils {
 
         int[] res = new int[jsonArray.size()];
         for (int i = 0; i < jsonArray.size(); i++) {
-            res[i] = (int)jsonArray.get(i);
+            res[i] = jsonArray.getIntValue(i);
         }
         return res;
     }
@@ -32,14 +30,14 @@ public class ArrayUtils {
             JSONArray sub = jsonArray.getJSONArray(i);
             int[] t = new int[sub.size()];
             for (int j = 0; j < sub.size(); j++) {
-                t[j] = (int)jsonArray.get(i);
+                t[j] = sub.getIntValue(j);
             }
             res[i] = t;
         }
         return res;
     }
 
-    public static void printArray(String s){
+    public static void printArray(String s) {
         int[] arr = readArray(s);
         System.out.println(Arrays.toString(arr));
     }

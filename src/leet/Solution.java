@@ -1,9 +1,5 @@
 package leet;
 
-import leet.tools.ArrayUtils;
-
-import java.util.*;
-
 /**
  * @author fengyadong
  * @Description: <br/>
@@ -12,38 +8,32 @@ import java.util.*;
 
 class Solution {
 
-    public static void main(String[] args) {
-        new Solution().singleNonDuplicate(new int[]{3, 3, 7, 7, 10, 11, 11});
-    }
-
-    public int singleNonDuplicate(int[] nums) {
-        if (nums.length == 1) {
-            return nums[0];
-        }
-
-        int l = 0;
-        int r = nums.length - 1;
-        while (l < r) {
-            int mid = l + (r - l) / 2;
-            if (nums[mid] != nums[mid - 1] && nums[mid] != nums[mid + 1]) {
-                return nums[mid];
-            }
-            if (nums[mid] == nums[mid - 1]) {
-                if ((mid - l + 1) % 2 == 0) {
-                    l = mid + 1;
-                } else {
-                    r = mid - 2;
-                }
-            }
-            if (nums[mid] == nums[mid + 1]) {
-                if ((mid + 1 - l + 1) % 2 == 0) {
-                    l = mid + 2;
-                } else {
-                    r = mid - 1;
-                }
+    public void sortColors(int[] nums) {
+        int count0 = 0;
+        int count1 = 0;
+        int count2 = 0;
+        for (int num : nums) {
+            if (num == 0) {
+                count0++;
+            } else if (num == 1) {
+                count1++;
+            } else {
+                count2++;
             }
         }
-        return nums[l];
+        int index = 0;
+        while (count0 > 0) {
+            nums[index++] = 0;
+            count0--;
+        }
+        while (count1 > 0) {
+            nums[index++] = 1;
+            count1--;
+        }
+        while (count2 > 0) {
+            nums[index++] = 2;
+            count2--;
+        }
     }
 }
 
